@@ -29,5 +29,10 @@
       });
     });
 
+    describe('return error.five for mod 5 like:', function () {
+      it('5', function () {
+        expect(validator(5)).to.be.deep.equal(['error.five']);
+      });
+    });
   });
 })();
