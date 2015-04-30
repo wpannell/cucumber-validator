@@ -1,5 +1,6 @@
 (function () {
-  var assert = require('assert');
+  var chai = require('chai');
+  var expect = chai.expect;
 
   describe('A Validator function will', function () {
 
@@ -9,7 +10,7 @@
 
     it('return error.nonpositive for not strictly positive numbers', function () {
       var validator = require('../lib/validator');
-      assert.deepEqual(validator(0), ['error.nonpositive']);
+      expect(validator(0)).to.be.deep.equal(['error.nonpositive']);
     });
   });
 })();
