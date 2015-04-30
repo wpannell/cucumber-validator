@@ -23,6 +23,9 @@
       it('3', function () {
         expect(validator(3)).to.be.deep.equal(['error.three']);
       });
+      it('and 42', function () {
+        expect(validator(42)).to.be.deep.equal(['error.three']);
+      });
     });
 
   });
