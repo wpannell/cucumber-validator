@@ -4,8 +4,8 @@
   "description": "learning bdd with cucumber",
   "main": "index.js",
   "scripts": {
-    "test": "mocha lib specs",
-    "watch": "mocha lib specs --watch"
+    "test": "mocha lib specs --growl",
+    "watch": "mocha lib specs --growl --watch"
   },
   "repository": {
     "type": "git",
