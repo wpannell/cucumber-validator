@@ -3,9 +3,10 @@
   var expect = chai.expect;
 
   describe('A Validator function will', function () {
-    it('return error.nonpositive for not strictly positive numbers', function () {
-      var validator = require('../lib/validator');
-      expect(validator(0)).to.be.deep.equal(['error.nonpositive']);
+    var validator = require('../lib/validator');
+
+    it('return no errors for valid numbers', function () {
+      expect(validator(3)).to.be.empty;
     });
   });
 })();
