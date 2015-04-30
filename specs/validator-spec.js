@@ -33,6 +33,10 @@
       it('5', function () {
         expect(validator(5)).to.be.deep.equal(['error.five']);
       });
+
+      it('and 10', function () {
+        expect(validator(10)).to.be.deep.equal(['error.five']);
+      });
     });
   });
 })();
