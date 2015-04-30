@@ -9,12 +9,15 @@
       expect(validator(3)).to.be.empty;
     });
 
-    it('will return error.nonpositive for 0', function () {
-      expect(validator(0)).to.be.deep.equal(['error.nonpositive']);
+    describe('return error.nonpositive', function () {
+      it('for 0', function () {
+        expect(validator(0)).to.be.deep.equal(['error.nonpositive']);
+      });
+
+      it('for negative', function () {
+        expect(validator(-2)).to.be.deep.equal(['error.nonpositive']);
+      });
     });
 
-    it('will return error.nonpositive for negative', function () {
-      expect(validator(-2)).to.be.deep.equal(['error.nonpositive']);
-    });
   });
 })();
