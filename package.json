@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/wpannell/cucumber-validator/issues"
   },
-  "homepage": "https://github.com/wpannell/cucumber-validator"
+  "homepage": "https://github.com/wpannell/cucumber-validator",
+  "devDependencies": {
+    "chai": "^2.3.0",
+    "mocha": "^2.2.4"
+  }
 }
