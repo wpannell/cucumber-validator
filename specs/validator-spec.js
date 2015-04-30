@@ -19,5 +19,11 @@
       });
     });
 
+    describe('return error.three for mod 3 like', function () {
+      it('3', function () {
+        expect(validator(0)).to.be.deep.equal(['error.three']);
+      });
+    });
+
   });
 })();
