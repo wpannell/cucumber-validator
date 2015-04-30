@@ -38,5 +38,9 @@
         expect(validator(10)).to.be.deep.equal(['error.five']);
       });
     });
+
+    it('will return one error for each violation', function () {
+      expect(validator(15)).to.be.deep.equal(['error.three', 'error.five']);
+    });
   });
 })();
